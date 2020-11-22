@@ -1,6 +1,6 @@
 class MbtiscoresController < ApplicationController
   before_action :set_mbtiscore, only: [:show, :edit, :update, :destroy]
-  before_action : authenticate_user!
+  before_action :authenticate_user!
   # GET /mbtiscores
   # GET /mbtiscores.json
   def index
