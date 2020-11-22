@@ -1,0 +1,285 @@
+<%= form_with(model: johari, local: true) do |form| %>
+  <% if johari.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(johari.errors.count, "error") %> prohibited this johari from being saved:</h2>
+
+      <ul>
+        <% johari.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  Instructions: Read each numbered item carefully. <br>  Read the statements marked “A” and “B.” <br> Determine which statement is most similar to what you would do. <br> Assign a point value to the A and B statements using the following scale. <br> The total point value for A and B is five (5).<br>
+
+<br>If statement A is most similar to what you would do:	A = 5	B = 0<br>
+<br>If statement A is not satisfactory, but better than B:	A = 4 or 3	B = 1 or 2<br>
+<br>If statement B is most similar to what you would do:	A = 0	B = 5<br>
+<br>If statement B is not satisfactory, but better than A:	A = 1 or 2	B = 4 or 3<br><br><br>
+
+
+  <div class="field">
+    <%= form.hidden_field :user_id %>
+    <%= form.hidden_field :user_id %>
+  </div>
+
+  <div class="field"> 1 If a friend of mine had a “personality conflict” with a mutual acquaintance of ours and I thought it was important for them to get along, I would:
+<br>
+    <%= form.label :ans1a %>
+    <%= form.number_field :ans1a, in: 0..5, step: 1, value: 0 %> Tell my friend that I felt s/he was partially responsible for any problems with this other person and try to let him/her know how the person was being affected by him/her.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans1b %>
+    <%= form.number_field :ans1b, in: 0..5, step: 1, value: 0  %> Not get involved because I wouldn’t be able to continue to get along with both of them once I had entered into their conflict in any way.
+
+  </div>
+
+  <div class="field"> 2 If one of my friends and I had a heated argument in the past and I realized that s/he was ill at ease around me from that time on, I would:
+<br>
+    <%= form.label :ans2a %>
+    <%= form.number_field :ans2a, in: 0..5, step: 1, value: 0  %>ust let the whole thing drop to avoid making things worse by discussing it.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans2b %>
+    <%= form.number_field :ans2b, in: 0..5, step: 1, value: 0  %>Bring up his/her behavior and ask how s/he felt the argument had affected our relationship.
+
+  </div>
+
+  <div class="field"> 3 If a friend began to avoid me and act in an aloof and withdrawn manner, I would:
+<br>
+    <%= form.label :ans3a %>
+    <%= form.number_field :ans3a, in: 0..5, step: 1, value: 0  %> Tell him/her about his/her behavior and suggest that s/he tell me what was on his/her mind.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans3b %>
+    <%= form.number_field :ans3b, in: 0..5, step: 1, value: 0  %> Follow his/her lead & keep our contact brief & aloof since that seems to be what s/he wants.
+
+  </div>
+
+  <div class="field"> 4  If two of my friends and I were talking and one of them slipped and brought up a personal problem of mine that involved the other friend, of which s/he was not yet aware, I would:
+<br>
+    <%= form.label :ans4a %>
+    <%= form.number_field :ans4a, in: 0..5, step: 1, value: 0  %> Change the subject and signal my friend to do the same.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans4b %>
+    <%= form.number_field :ans4b, in: 0..5, step: 1, value: 0  %> Briefly explain what the other friend was talking about and suggest that we go into it later.
+
+  </div>
+
+  <div class="field"> 5 If a friend of mine were to tell me that, in his/her opinion, I was doing things that made me less effective than I might be in social situations, I would:
+<br>
+    <%= form.label :ans5a %>
+    <%= form.number_field :ans5a, in: 0..5, step: 1, value: 0  %> Ask him/her to describe what s/he has observed and suggest changes I might make.
+
+  </div>
+
+  <div class="field"> 
+    <%= form.label :ans5b %>
+    <%= form.number_field :ans5b, in: 0..5, step: 1, value: 0  %> Resent his/her criticism and let him/her know why I behave the way I do.
+  </div>
+
+  <div class="field"> 6 If one of my friends aspired to an office in our organization for which I felt s/he was unqualified, and if s/he had been tentatively assigned to that position by the leader of our group, I would:
+<br>
+    <%= form.label :ans6a %>
+    <%= form.number_field :ans6a, in: 0..5, step: 1, value: 0  %> Not mention any misgivings to either my friend or the leader of our group and let them handle it in their own way.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans6b %>
+    <%= form.number_field :ans6b, in: 0..5, step: 1, value: 0  %> Tell my friend and the group leader of my misgivings and leave the final decision to them.
+
+  </div>
+
+  <div class="field"> 7 If I felt that one of my friends was being unfair to me and his/her other friends, but none of the other friends had mentioned anything about it, I would:
+<br>
+    <%= form.label :ans7a %>
+    <%= form.number_field :ans7a, in: 0..5, step: 1, value: 0  %>Ask the other friends how they perceive the situation to see if they felt s/he was being unfair.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans7b %>
+    <%= form.number_field :ans7b, in: 0..5, step: 1, value: 0  %> Not ask the others how they perceive our friend, but wait for them to bring it up with me.
+
+  </div>
+
+  <div class="field"> 8 If I were preoccupied with some personal matters and a friend told me that I had become irritated with him/her and others and that I was jumping on him/her for unimportant things, I would:
+<br>
+    <%= form.label :ans8a %>
+    <%= form.number_field :ans8a, in: 0..5, step: 1, value: 0  %> Tell him/her I was preoccupied and would probably be on edge for a while.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans8b %>
+    <%= form.number_field :ans8b, in: 0..5, step: 1, value: 0  %> Listen to his/her complaints but not explain myself to him/her.
+
+  </div>
+
+  <div class="field"> 9  If I had heard some friends discussing an ugly rumor about a friend of mine which I knew could hurt him/her and s/he asked me what I knew about it, if anything, I would:
+<br>
+    <%= form.label :ans9a %>
+    <%= form.number_field :ans9a, in: 0..5, step: 1, value: 0  %> Say I didn’t know anything and tell him/her our friends wouldn’t believe ugly rumors anyway.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans9b %>
+    <%= form.number_field :ans9b, in: 0..5, step: 1, value: 0  %> Tell him/her exactly what I had heard, when I had heard it, and from whom I had heard it.
+
+  </div>
+
+  <div class="field"> 10 If a friend pointed out that I had a personality conflict with another friend with whom it was important for me to get along, I would:
+<br>
+    <%= form.label :ans10a %>
+    <%= form.number_field :ans10a, in: 0..5, step: 1, value: 0  %> Consider his/her comments out of line and tell him/her I didn’t want to discuss the matter.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans10b %>
+    <%= form.number_field :ans10b, in: 0..5, step: 1, value: 0  %> Talk about it openly with him/her to find out how my behavior was being affected by this.
+
+  </div>
+
+  <div class="field"> 11 If my relationship with a friend has been damaged by repeated arguments on an issue of importance to us both, I would:
+<br>
+    <%= form.label :ans11a %>
+    <%= form.number_field :ans11a, in: 0..5, step: 1, value: 0  %> Be cautious in my conversations with him/her so the issue would not come up again to worsen our relationship.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans11b %>
+    <%= form.number_field :ans11b, in: 0..5, step: 1, value: 0  %> Explain the problems the controversy is causing for our relationship and suggest that we discuss it until we get it resolved.
+
+  </div>
+
+  <div class="field"> 12 If in a conversation with a friend about his/her personal problems and behavior s/he suddenly suggested we discuss my problems and behavior as well as his/her own, I would:
+<br>
+    <%= form.label :ans12a %>
+    <%= form.number_field :ans12a, in: 0..5, step: 1, value: 0  %> Be evasive and try to keep the discussion away from me.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans12b %>
+    <%= form.number_field :ans12b, in: 0..5, step: 1, value: 0  %> Welcome the opportunity to hear what s/he felt about me and encourage his/her comments.
+
+  </div>
+
+  <div class="field"> 13 If a friend of mine began to tell me about his/her hostile feelings about another friend whom s/he felt was being unkind to others (and I agreed wholeheartedly), I would:
+<br>
+    <%= form.label :ans13a %>
+    <%= form.number_field :ans13a, in: 0..5, step: 1, value: 0  %> Listen and also express my own feelings to her/him so s/he would know where I stood.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans13b %>
+    <%= form.number_field :ans13b, in: 0..5, step: 1, value: 0  %> Listen, but not express my own negative views and opinion because s/he might repeat what I said in confidence.
+k gt 	 =
+  </div>
+
+  <div class="field"> 14  If I thought an ugly rumor was being spread about me and suspected that one of my friends had quite likely heard it, I would:
+<br>
+    <%= form.label :ans14a %>
+    <%= form.number_field :ans14a, in: 0..5, step: 1, value: 0  %> Avoid mentioning the issue and leave it to him/her to tell me about it if s/he wanted to
+  </div>
+
+  <div class="field">
+    <%= form.label :ans14b %>
+    <%= form.number_field :ans14b, in: 0..5, step: 1, value: 0  %> Risk putting him/her on the spot by asking directly what s/he knew about the rumor.
+
+  </div>
+
+  <div class="field"> 15 If had observed a friend in social situations and thought that s/he was doing a number of things which hurt his/her relationships, I would:
+<br>
+    <%= form.label :ans15a %>
+    <%= form.number_field :ans15a, in: 0..5, step: 1, value: 0  %> Risk being seen as a busy-body and tell him/her what I had observed and my reactions to it.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans15b %>
+    <%= form.number_field :ans15b, in: 0..5, step: 1, value: 0  %> Keep my opinion to myself rather than be seen as interfering in what is none of my business.
+
+  </div>
+
+  <div class="field"> 16 If two friends and I were talking and one of them inadvertently mentioned a personal problem which involved me, but of which I knew nothing, I would:
+<br>
+    <%= form.label :ans16a %>
+    <%= form.number_field :ans16a, in: 0..5, step: 1, value: 0  %> Press them for information about the problem and their opinions on it.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans16b %>
+    <%= form.number_field :ans16b, in: 0..5, step: 1, value: 0  %> Leave it up to my friends to tell me or not, letting them change the subject if they wished.
+
+  </div>
+
+  <div class="field"> 17 If a friend seemed to be preoccupied and began to jump on me for seemingly unimportant things, as well as others without real cause, I would:
+<br>
+    <%= form.label :ans17a %>
+    <%= form.number_field :ans17a, in: 0..5, step: 1, value: 0  %>Treat him/her with kid gloves for a while on the assumption that s/he was having some temporary personal problems which were none of my business.
+⎯             	
+  </div>
+
+  <div class="field">
+    <%= form.label :ans17b %>
+    <%= form.number_field :ans17b, in: 0..5, step: 1, value: 0  %>Try to talk to him/her about it and explain how his/her behavior was 
+  </div>
+
+  <div class="field"> 18 If I had begun to dislike certain habits of a friend to the point that it was interfering with my enjoyment of their company, I would:
+<br>
+    <%= form.label :ans18a %>
+    <%= form.number_field :ans18a, in: 0..5, step: 1, value: 0  %>Say nothing to him/her directly, but let him/her know my feelings by ignoring him/her whenever the annoying habits were obvious.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans18b %>
+    <%= form.number_field :ans18b, in: 0..5, step: 1, value: 0  %>Get my feelings out in the open and clear the air so that we could continue our friendship comfortably and enjoyably.
+
+  </div>
+
+  <div class="field"> 19  In discussing social behavior with one of my more sensitive friends, I would:
+<br>
+    <%= form.label :ans19a %>
+    <%= form.number_field :ans19a, in: 0..5, step: 1 , value: 0 %>Avoid mentioning his/her flaws and weaknesses so as not to hurt his/her feelings
+  </div>
+
+  <div class="field">
+    <%= form.label :ans19b %>
+    <%= form.number_field :ans19b, in: 0..5, step: 1, value: 0  %>Focus on his/her flaws and weaknesses so s/he could improve his/her interpersonal skills.
+
+  </div>
+
+  <div class="field"> 20 If I knew my friends’ attitudes toward me had become rather negative lately and I knew I might be assigned an important position in our group, I would:
+<br>
+    <%= form.label :ans20a %>
+    <%= form.number_field :ans20a, in: 0..5, step: 1 , value: 0 %>Discuss my shortcomings with my friends so I could see where to improve.
+
+  </div>
+
+  <div class="field">
+    <%= form.label :ans20b %>
+    <%= form.number_field :ans20b, in: 0..5, step: 1 , value: 0 %>Try to figure out my own shortcomings by myself so I could improve.
+
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

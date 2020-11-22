@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ecassessments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Ans1</th>
+      <th>Ans2</th>
+      <th>Ans3</th>
+      <th>Ans4</th>
+      <th>Ans5</th>
+      <th>Ans6</th>
+      <th>Ans7</th>
+      <th>Ans8</th>
+      <th>Ans9</th>
+      <th>Ans10</th>
+      <th>Ans11</th>
+      <th>Ans12</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ecassessments.each do |ecassessment| %>
+      <tr>
+        <td><%= ecassessment.user_id %></td>
+        <td><%= ecassessment.ans1 %></td>
+        <td><%= ecassessment.ans2 %></td>
+        <td><%= ecassessment.ans3 %></td>
+        <td><%= ecassessment.ans4 %></td>
+        <td><%= ecassessment.ans5 %></td>
+        <td><%= ecassessment.ans6 %></td>
+        <td><%= ecassessment.ans7 %></td>
+        <td><%= ecassessment.ans8 %></td>
+        <td><%= ecassessment.ans9 %></td>
+        <td><%= ecassessment.ans10 %></td>
+        <td><%= ecassessment.ans11 %></td>
+        <td><%= ecassessment.ans12 %></td>
+        <td><%= link_to 'Show', ecassessment %></td>
+        <td><%= link_to 'Edit', edit_ecassessment_path(ecassessment) %></td>
+        <td><%= link_to 'Destroy', ecassessment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ecassessment', new_ecassessment_path %>

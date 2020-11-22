@@ -1,0 +1,62 @@
+<%= form_with(model: mbtinewscore, local: true) do |form| %>
+  <% if mbtinewscore.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mbtinewscore.errors.count, "error") %> prohibited this mbtinewscore from being saved:</h2>
+
+      <ul>
+        <% mbtinewscore.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scorei %>
+    <%= form.number_field :scorei %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scoree %>
+    <%= form.number_field :scoree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scoren %>
+    <%= form.number_field :scoren %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scores %>
+    <%= form.number_field :scores %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scoret %>
+    <%= form.number_field :scoret %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scoref %>
+    <%= form.number_field :scoref %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scorep %>
+    <%= form.number_field :scorep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scorej %>
+    <%= form.number_field :scorej %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

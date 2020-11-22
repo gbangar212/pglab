@@ -1,0 +1,304 @@
+<%= form_with(model: firo, local: true) do |form| %>
+  <% if firo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(firo.errors.count, "error") %> prohibited this firo from being saved:</h2>
+
+      <ul>
+        <% firo.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <b>W. C. Schutz </b> <br><br>
+  
+  <i> Directions: Please enter the number of the answer that best applied to you in the field on the left of the statement. Please be as honest as you can. 
+  <br> 1 = Usually 	2 = Often	3 = Sometimes	4 = Occasionally	5 = Rarely	6 = Never <br></i>
+
+  <div class="field">
+    <%= form.hidden_field :user_id %>
+    <%= form.hidden_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans1, "1" %>
+    <%= form.number_field :ans1, in: 1..6, step: 1 %> I try to be with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans2, "2" %>
+    <%= form.number_field :ans2, in: 1..6, step: 1 %> I let other people decide what to do
+  </div>
+
+  <div class="field">
+    <%= form.label :ans3, "3" %>
+    <%= form.number_field :ans3, in: 1..6, step: 1 %> I join social groups
+  </div>
+
+  <div class="field">
+    <%= form.label :ans4, "4" %>
+    <%= form.number_field :ans4, in: 1..6, step: 1 %> I try to have close relationship with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans5, "5" %>
+    <%= form.number_field :ans5, in: 1..6, step: 1 %> I tend to join social organisations when I have an opportunity
+  </div>
+
+  <div class="field">
+    <%= form.label :ans6,"6" %>
+    <%= form.number_field :ans6, in: 1..6, step: 1 %> I let other people strongly influence my actions
+  </div>
+
+  <div class="field">
+    <%= form.label :ans7, "7" %>
+    <%= form.number_field :ans7, in: 1..6, step: 1 %> I try to be included in informal social activities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans8, "8" %>
+    <%= form.number_field :ans8, in: 1..6, step: 1 %> I try to have close, personal relationships with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans9,"9" %>
+    <%= form.number_field :ans9, in: 1..6, step: 1 %> I try to include other people in my plans
+  </div>
+
+  <div class="field">
+    <%= form.label :ans10, "10" %>
+    <%= form.number_field :ans10, in: 1..6, step: 1 %> I let other people control my actions
+  </div>
+
+  <div class="field">
+    <%= form.label :ans11, "11" %>
+    <%= form.number_field :ans11, in: 1..6, step: 1 %> I try to have people around me
+  </div>
+
+  <div class="field">
+    <%= form.label :ans12, "12" %>
+    <%= form.number_field :ans12, in: 1..6, step: 1 %> I try to get close and personal with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans13, "13" %>
+    <%= form.number_field :ans13, in: 1..6, step: 1 %> When people are doing things together, I tend to join them
+  </div>
+
+  <div class="field">
+    <%= form.label :ans14, "14" %>
+    <%= form.number_field :ans14, in: 1..6, step: 1 %> I am easily led by people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans15, "15" %>
+    <%= form.number_field :ans15, in: 1..6, step: 1 %> I try to avoid being alone
+  </div>
+
+  <div class="field">
+    <%= form.label :ans16, "16" %>
+    <%= form.number_field :ans16, in: 1..6, step: 1 %> I try to participate in group activities
+  </div>
+  
+  <i> For item 17 to 40, the rating scale is as follows 
+  <br> 1 = Most people 2 = Many people 3 = Some people 4 = A few people 5 = One or two people 6 = Nobody </i> <br> <br>
+  
+
+  <div class="field">
+    <%= form.label :ans17, "17" %> 
+    <%= form.number_field :ans17, in: 1..6, step: 1 %> I try to be friendly with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans18, "18" %>
+    <%= form.number_field :ans18, in: 1..6, step: 1 %> I let other people decide what I do
+  </div>
+
+  <div class="field">
+    <%= form.label :ans19, "19" %>
+    <%= form.number_field :ans19, in: 1..6, step: 1 %> My personal relationships with people are cool and distant
+  </div>
+
+  <div class="field">
+    <%= form.label :ans20, "20" %>
+    <%= form.number_field :ans20, in: 1..6, step: 1 %> I let other people take charge of things
+  </div>
+
+  <div class="field">
+    <%= form.label :ans21, "21" %>
+    <%= form.number_field :ans21, in: 1..6, step: 1 %> I try to have close relationships with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans22, "22" %>
+    <%= form.number_field :ans22, in: 1..6, step: 1 %> I let other people strongly influence my actions
+  </div>
+
+  <div class="field">
+    <%= form.label :ans23, "23" %>
+    <%= form.number_field :ans23, in: 1..6, step: 1 %> I try to get close and personal with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans24, "24" %>
+    <%= form.number_field :ans24, in: 1..6, step: 1 %> I let other people control my actions
+  </div>
+
+  <div class="field">
+    <%= form.label :ans25, "25" %>
+    <%= form.number_field :ans25, in: 1..6, step: 1 %> I act cool and distant with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans26, "26" %>
+    <%= form.number_field :ans26, in: 1..6, step: 1 %> I am easily led by people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans27, "27" %>
+    <%= form.number_field :ans27, in: 1..6, step: 1 %> I try to have close, personal relationships with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans28, "28" %>
+    <%= form.number_field :ans28, in: 1..6, step: 1 %> I like people to invite me to things
+  </div>
+
+  <div class="field">
+    <%= form.label :ans29, "29" %>
+    <%= form.number_field :ans29, in: 1..6, step: 1 %> I like people to act close and personal with me
+  </div>
+
+  <div class="field">
+    <%= form.label :ans30, "30" %>
+    <%= form.number_field :ans30, in: 1..6, step: 1 %> I try to influence strongly the actions of other people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans31, "31" %>
+    <%= form.number_field :ans31, in: 1..6, step: 1 %> I like people to invite me to join in their activities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans32, "32" %>
+    <%= form.number_field :ans32, in: 1..6, step: 1 %> I like people to act close toward me	
+  </div>
+
+  <div class="field">
+    <%= form.label :ans33, "33" %>
+    <%= form.number_field :ans33, in: 1..6, step: 1 %> I try to take charge of things when I am with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans34, "34" %>
+    <%= form.number_field :ans34, in: 1..6, step: 1 %> I like people to include me in their activities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans35, "35" %>
+    <%= form.number_field :ans35, in: 1..6, step: 1 %> I like people to act cool and distant toward me
+  </div>
+
+  <div class="field">
+    <%= form.label :ans36, "36" %>
+    <%= form.number_field :ans36, in: 1..6, step: 1 %> I like other people to do things the way I want them done
+  </div>
+
+  <div class="field">
+    <%= form.label :ans37, "37" %>
+    <%= form.number_field :ans37, in: 1..6, step: 1 %> I like people to ask me to participate in their discussions
+  </div>
+
+  <div class="field">
+    <%= form.label :ans38, "38" %>
+    <%= form.number_field :ans38, in: 1..6, step: 1 %> I like people to act friendly toward me
+  </div>
+
+  <div class="field">
+    <%= form.label :ans39, "39" %>
+    <%= form.number_field :ans39, in: 1..6, step: 1 %> I like people to invite me to participate in their activities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans40, "40" %>
+    <%= form.number_field :ans40, in: 1..6, step: 1 %> I like people to act distant toward me
+  </div>
+
+  <i> For item 41 to 54, the rating scale is as follows 
+  <br> 1 = Usually	2 = Often	3 = Sometimes	4 = Occasionally	5 = Rarely	6 = Never </i><br> <br>
+
+  <div class="field">
+    <%= form.label :ans41, "41" %>
+    <%= form.number_field :ans41, in: 1..6, step: 1 %> I try to be the dominant person when I am with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans42, "42" %>
+    <%= form.number_field :ans42, in: 1..6, step: 1 %> I like people to invite me to things
+  </div>
+
+  <div class="field">
+    <%= form.label :ans43, "43" %>
+    <%= form.number_field :ans43, in: 1..6, step: 1 %> I like people to act close toward me 
+  </div>
+
+  <div class="field">
+    <%= form.label :ans44, "44" %>
+    <%= form.number_field :ans44, in: 1..6, step: 1 %> I like other people to do things I want done
+  </div>
+
+  <div class="field">
+    <%= form.label :ans45, "45" %>
+    <%= form.number_field :ans45, in: 1..6, step: 1 %> I like other people to invite me to join in their activities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans46, "46" %>
+    <%= form.number_field :ans46, in: 1..6, step: 1 %> I like other people to act cool and distant toward me
+  </div>
+
+  <div class="field">
+    <%= form.label :ans47, "47" %>
+    <%= form.number_field :ans47, in: 1..6, step: 1 %> I try to influence strongly other people's actions
+  </div>
+
+  <div class="field">
+    <%= form.label :ans48, "48" %>
+    <%= form.number_field :ans48, in: 1..6, step: 1 %> I like people to include me in their activities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans49, "49" %>
+    <%= form.number_field :ans49, in: 1..6, step: 1 %> I like other people to act close and personal with me
+  </div>
+
+  <div class="field">
+    <%= form.label :ans50, "50" %>
+    <%= form.number_field :ans50, in: 1..6, step: 1 %> I try to take charge of things when I am with people
+  </div>
+
+  <div class="field">
+    <%= form.label :ans51, "51" %>
+    <%= form.number_field :ans51, in: 1..6, step: 1 %> I like people to invite me to participate in their activities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans52, "52" %>
+    <%= form.number_field :ans52, in: 1..6, step: 1 %> I like people to act distant toward me
+  </div>
+  
+  <div class="field">
+    <%= form.label :ans53, "53" %> 
+    <%= form.number_field :ans53, in: 1..6, step: 1 %> I try to have other people do things the way I want them done
+  </div>
+  
+  <div class="field">
+    <%= form.label :ans54, "54" %> 
+    <%= form.number_field :ans54, in: 1..6, step: 1 %> I take charge of things when I am with people
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

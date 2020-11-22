@@ -1,0 +1,362 @@
+<%= form_with(model: mbti, local: true) do |form| %>
+  <% if mbti.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mbti.errors.count, "error") %> prohibited this mbti from being saved:</h2>
+
+      <ul>
+        <% mbti.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>Just as every person has differently-shaped feet and toes from every other person, so we all have
+differently "shaped" personalities. Just as no person's foot shape is "right" or "wrong," so no
+person's personality shape is right or wrong. The purpose of this inventory is to give you a picture
+of the shape of your preferences, but that shape, while different from the shapes of other persons'
+personalities, has nothing to do with mental health or mental problems.</p>
+<p>The following items are arranged in pairs (a and b), and each member of the pair represents a
+preference you may or may not hold. Rate your preference for each item by giving it a score of 0 to
+5 (0 meaning you really feel negative about it or strongly about the other member of the pair, 5
+meaning you strongly prefer it or do not prefer the other member of the pair). The scores for a and
+b MUST ADD UP TO 5 (0 and 5, land 4, 2 and 3, etc.). Do not use fractions such as 2.5.</p>
+
+<p> I prefer.. </p>
+
+  <div class="field">
+    <%= form.hidden_field :user_id %>
+    <%= form.hidden_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans1a %>
+    <%= form.number_field :ans1a, in: 0..5, step: 1, value: 0 %> making decisions after finding out what others think. 
+  </div>
+
+  <div class="field">
+    <%= form.label :ans1b %>
+    <%= form.number_field :ans1b, in: 0..5, step: 1, value: 0 %> making decisions without consulting others.
+  </div> <br>
+
+  <div class="field">
+    <%= form.label :ans2a %>
+    <%= form.number_field :ans2a, in: 0..5, step: 1 , value: 0%> being called imaginative or intuitive.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans2b %>
+    <%= form.number_field :ans2b, in: 0..5, step: 1, value: 0 %> being called factual and accurate.
+  </div> <br>
+
+  <div class="field">
+    <%= form.label :ans3a %>
+    <%= form.number_field :ans3a, in: 0..5, step: 1, value: 0 %> making decisions about people in organizations based on available data and systematic
+analysis of situations.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans3b %>
+    <%= form.number_field :ans3b, in: 0..5, step: 1, value: 0 %> making decisions about people in organizations based on empathy, feelings,
+and understanding of their needs and values.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans4a %>
+    <%= form.number_field :ans4a, in: 0..5, step: 1, value: 0 %> allowing commitments to occur if others want to make them.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans4b %>
+    <%= form.number_field :ans4b, in: 0..5, step: 1, value: 0 %> pushing for definite commitments to ensure that they are made. 
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans5a %>
+    <%= form.number_field :ans5a, in: 0..5, step: 1, value: 0 %> quiet, thoughtful time alone.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans5b %>
+    <%= form.number_field :ans5b, in: 0..5, step: 1, value: 0 %> active, energetic time with people.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans6a %>
+    <%= form.number_field :ans6a, in: 0..5, step: 1, value: 0 %> using methods I know well that are effective to get the job done.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans6b %>
+    <%= form.number_field :ans6b, in: 0..5, step: 1, value: 0 %> trying to think of new methods of doing tasks when confronted with them.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans7a %>
+    <%= form.number_field :ans7a, in: 0..5, step: 1, value: 0 %> drawing conclusions based on unemotional logic and careful step-by-step analysis.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans7b %>
+    <%= form.number_field :ans7b, in: 0..5, step: 1, value: 0 %> drawing conclusions based on what I feel and believe about life and people
+from past experiences.
+  </div>
+<br>
+  <div class="field">
+    <%= form.label :ans8a %>
+    <%= form.number_field :ans8a, in: 0..5, step: 1, value: 0 %> avoiding making deadlines.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans8b %>
+    <%= form.number_field :ans8b, in: 0..5, step: 1, value: 0 %> setting a schedule and sticking to it
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans9a %>
+    <%= form.number_field :ans9a, in: 0..5, step: 1, value: 0 %> talking a while and then thinking to myself about the subject.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans9b %>
+    <%= form.number_field :ans9b, in: 0..5, step: 1, value: 0 %> talking freely for an extended period and thinking to myself at a later time. 
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans10a %>
+    <%= form.number_field :ans10a, in: 0..5, step: 1, value: 0 %> thinking about possibilities
+  </div>
+
+  <div class="field">
+    <%= form.label :ans10b %>
+    <%= form.number_field :ans10b, in: 0..5, step: 1, value: 0 %> dealing with actualities.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans11a %>
+    <%= form.number_field :ans11a, in: 0..5, step: 1, value: 0 %> being thought of as a thinking person.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans11b %>
+    <%= form.number_field :ans11b, in: 0..5, step: 1, value: 0 %> being thought of as a feeling person.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans12a %>
+    <%= form.number_field :ans12a, in: 0..5, step: 1, value: 0 %> considering every possible angle for a long time before and after making a decision. 
+  </div>
+
+  <div class="field">
+    <%= form.label :ans12b %>
+    <%= form.number_field :ans12b, in: 0..5, step: 1, value: 0 %> getting the information I need, considering it for a while, and then making a
+fairly quick, firm decision.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans13a %>
+    <%= form.number_field :ans13a, in: 0..5, step: 1, value: 0 %> inner thoughts and feelings others cannot see. 
+  </div>
+
+  <div class="field">
+    <%= form.label :ans13b %>
+    <%= form.number_field :ans13b, in: 0..5, step: 1, value: 0 %> activities and occurrences in which others join.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans14a %>
+    <%= form.number_field :ans14a, in: 0..5, step: 1, value: 0 %> the abstract or theoretical. 
+  </div>
+
+  <div class="field">
+    <%= form.label :ans14b %>
+    <%= form.number_field :ans14b, in: 0..5, step: 1, value: 0 %> the concrete or real.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans15a %>
+    <%= form.number_field :ans15a, in: 0..5, step: 1, value: 0 %> helping others explore their feelings.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans15b %>
+    <%= form.number_field :ans15b, in: 0..5, step: 1, value: 0 %> helping others make logical decisions.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans16a %>
+    <%= form.number_field :ans16a, in: 0..5, step: 1, value: 0 %> change and keeping options open.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans16b %>
+    <%= form.number_field :ans16b, in: 0..5, step: 1, value: 0 %> predictability and knowing in advance
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans17a %>
+    <%= form.number_field :ans17a, in: 0..5, step: 1, value: 0 %> communicating little of my inner thinking and feelings.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans17b %>
+    <%= form.number_field :ans17b, in: 0..5, step: 1, value: 0 %> communicating freely my inner thinking and feelings.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans18a %>
+    <%= form.number_field :ans18a, in: 0..5, step: 1, value: 0 %>  possible views of the whole.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans18b %>
+    <%= form.number_field :ans18b, in: 0..5, step: 1, value: 0 %>  the factual details available.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans19a %>
+    <%= form.number_field :ans19a, in: 0..5, step: 1, value: 0 %> using common sense and conviction to make decisions
+  </div>
+
+  <div class="field">
+    <%= form.label :ans19b %>
+    <%= form.number_field :ans19b, in: 0..5, step: 1, value: 0 %> using data, analysis, and reason to make decisions.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans20a %>
+    <%= form.number_field :ans20a, in: 0..5, step: 1 , value: 0%> planning ahead based on projections. 
+  </div>
+
+  <div class="field">
+    <%= form.label :ans20b %>
+    <%= form.number_field :ans20b, in: 0..5, step: 1 , value: 0%> planning as necessities arise, just before carrying out the plans.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans21a %>
+    <%= form.number_field :ans21a, in: 0..5, step: 1, value: 0 %>  meeting new people.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans21b %>
+    <%= form.number_field :ans21b, in: 0..5, step: 1 , value: 0%> being alone or with one person I know well.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans22a %>
+    <%= form.number_field :ans22a, in: 0..5, step: 1 , value: 0%>  ideas.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans22b %>
+    <%= form.number_field :ans22b, in: 0..5, step: 1, value: 0 %> facts.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans23a %>
+    <%= form.number_field :ans23a, in: 0..5, step: 1, value: 0 %> convictions.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans23b %>
+    <%= form.number_field :ans23b, in: 0..5, step: 1, value: 0 %> verifiable conclusions.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans24a %>
+    <%= form.number_field :ans24a, in: 0..5, step: 1, value: 0 %> keeping appointments and notes about commitments in notebooks or in
+appointment books as much as possible.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans24b %>
+    <%= form.number_field :ans24b, in: 0..5, step: 1, value: 0 %> using appointment books and notebooks as minimally as possible (although
+I may use them).
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans25a %>
+    <%= form.number_field :ans25a, in: 0..5, step: 1, value: 0 %>  discussing a new, unconsidered issue at length in a group.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans25b %>
+    <%= form.number_field :ans25b, in: 0..5, step: 1, value: 0 %> puzzling out issues in my mind, then sharing the results with another
+person.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans26a %>
+    <%= form.number_field :ans26a, in: 0..5, step: 1, value: 0 %> carrying out carefully laid. detailed plans with precision.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans26b %>
+    <%= form.number_field :ans26b, in: 0..5, step: 1, value: 0 %> designing plans and structures without necessarily carrying them out
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans27a %>
+    <%= form.number_field :ans27a, in: 0..5, step: 1, value: 0 %>  logical people.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans27b %>
+    <%= form.number_field :ans27b, in: 0..5, step: 1 , value: 0%> feeling people.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans28a %>
+    <%= form.number_field :ans28a, in: 0..5, step: 1, value: 0 %>  being free to do things on the spur of the moment.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans28b %>
+    <%= form.number_field :ans28b, in: 0..5, step: 1 , value: 0%>  knowing well in advance what I am expected to do.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans29a %>
+    <%= form.number_field :ans29a, in: 0..5, step: 1 , value: 0%>  being the center of attention.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans29b %>
+    <%= form.number_field :ans29b, in: 0..5, step: 1, value: 0 %>  being reserved.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans30a %>
+    <%= form.number_field :ans30a, in: 0..5, step: 1 , value: 0%>  imagining the nonexistent.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans30b %>
+    <%= form.number_field :ans30b, in: 0..5, step: 1, value: 0 %> examining details of the actual.
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans31a %>
+    <%= form.number_field :ans31a, in: 0..5, step: 1, value: 0 %> experiencing emotional situations, discussions, movies.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans31b %>
+    <%= form.number_field :ans31b, in: 0..5, step: 1, value: 0 %> using my ability to analyze situations
+  </div><br>
+
+  <div class="field">
+    <%= form.label :ans32a %>
+    <%= form.number_field :ans32a, in: 0..5, step: 1, value: 0 %> starting meetings at a prearranged time.
+  </div>
+
+  <div class="field">
+    <%= form.label :ans32b %>
+    <%= form.number_field :ans32b, in: 0..5, step: 1 , value: 0%> starting meetings when all are comfortable or ready.
+  </div><br>
+
+  <div class="actions">
+    <%= form.submit  %>
+  </div>
+<% end %>

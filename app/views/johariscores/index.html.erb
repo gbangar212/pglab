@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Johariscores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Askfeedback</th>
+      <th>Givefeedback</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @johariscores.each do |johariscore| %>
+      <tr>
+        <td><%= johariscore.user_id %></td>
+        <td><%= johariscore.askfeedback %></td>
+        <td><%= johariscore.givefeedback %></td>
+        <td><%= link_to 'Show', johariscore %></td>
+        <td><%= link_to 'Edit', edit_johariscore_path(johariscore) %></td>
+        <td><%= link_to 'Destroy', johariscore, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Johariscore', new_johariscore_path %>

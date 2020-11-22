@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+
+
+<div class="container">
+  <h2>Your Profile</h2>
+  <p>Click <%= link_to ' here to Edit', edit_profile_path(@profile) %> your profile</p> <br>           
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Roll no</th>
+        <th>Name</th>
+        <th>Entry Year</th>
+        <th>Specialisation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @profile.roll %></td>
+        <td><%= @profile.name %></td>
+        <td><%= @profile.entry %></td>
+        <td><%= @profile.spec %></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+

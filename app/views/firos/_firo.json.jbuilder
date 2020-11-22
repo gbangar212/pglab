@@ -1,0 +1,2 @@
+json.extract! firo, :id, :user_id, :ans1, :ans2, :ans3, :ans4, :ans5, :ans6, :ans7, :ans8, :ans9, :ans10, :ans11, :ans12, :ans13, :ans14, :ans15, :ans16, :ans17, :ans18, :ans19, :ans20, :ans21, :ans22, :ans23, :ans24, :ans25, :ans26, :ans27, :ans28, :ans29, :ans30, :ans31, :ans32, :ans33, :ans34, :ans35, :ans36, :ans37, :ans38, :ans39, :ans40, :ans41, :ans42, :ans43, :ans44, :ans45, :ans46, :ans47, :ans48, :ans49, :ans50, :ans51, :ans52, :created_at, :updated_at
+json.url firo_url(firo, format: :json)

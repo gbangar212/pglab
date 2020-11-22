@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="container">
+  <h2>Your FIRO - B score</h2>
+  <p>Thanks for completing the assessment. Your score is below</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th></th>
+        <th>I</th>
+        <th>C</th>
+        <th>A</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @firoscores.each do |firoscore| %>
+      <tr>
+        <td>E</td>
+        <td><%= firoscore.ei %></td>
+        <td><%= firoscore.ec %></td>
+        <td><%= firoscore.ea %></td>
+      </tr>
+      <tr>
+        <td>W</td>
+        <td><%= firoscore.wi %></td>
+        <td><%= firoscore.wc %></td>
+        <td><%= firoscore.wa %></td>
+      </tr>
+      <% end %> 
+    </tbody>
+  </table>
+</div>

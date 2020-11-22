@@ -1,0 +1,155 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mbtis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Ans1a</th>
+      <th>Ans1b</th>
+      <th>Ans2a</th>
+      <th>Ans2b</th>
+      <th>Ans3a</th>
+      <th>Ans3b</th>
+      <th>Ans4a</th>
+      <th>Ans4b</th>
+      <th>Ans5a</th>
+      <th>Ans5b</th>
+      <th>Ans6a</th>
+      <th>Ans6b</th>
+      <th>Ans7a</th>
+      <th>Ans7b</th>
+      <th>Ans8a</th>
+      <th>Ans8b</th>
+      <th>Ans9a</th>
+      <th>Ans9b</th>
+      <th>Ans10a</th>
+      <th>Ans10b</th>
+      <th>Ans11a</th>
+      <th>Ans11b</th>
+      <th>Ans12a</th>
+      <th>Ans12b</th>
+      <th>Ans13a</th>
+      <th>Ans13b</th>
+      <th>Ans14a</th>
+      <th>Ans14b</th>
+      <th>Ans15a</th>
+      <th>Ans15b</th>
+      <th>Ans16a</th>
+      <th>Ans16b</th>
+      <th>Ans17a</th>
+      <th>Ans17b</th>
+      <th>Ans18a</th>
+      <th>Ans18b</th>
+      <th>Ans19a</th>
+      <th>Ans19b</th>
+      <th>Ans20a</th>
+      <th>Ans20b</th>
+      <th>Ans21a</th>
+      <th>Ans21b</th>
+      <th>Ans22a</th>
+      <th>Ans22b</th>
+      <th>Ans23a</th>
+      <th>Ans23b</th>
+      <th>Ans25a</th>
+      <th>Ans24b</th>
+      <th>Ans25a</th>
+      <th>Ans25b</th>
+      <th>Ans26a</th>
+      <th>Ans26b</th>
+      <th>Ans27a</th>
+      <th>Ans27b</th>
+      <th>Ans28a</th>
+      <th>Ans28b</th>
+      <th>Ans29a</th>
+      <th>Ans29b</th>
+      <th>Ans30a</th>
+      <th>Ans30b</th>
+      <th>Ans31a</th>
+      <th>Ans31b</th>
+      <th>Ans32a</th>
+      <th>Ans32b</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mbtis.each do |mbti| %>
+      <tr>
+        <td><%= mbti.user_id %></td>
+        <td><%= mbti.ans1a %></td>
+        <td><%= mbti.ans1b %></td>
+        <td><%= mbti.ans2a %></td>
+        <td><%= mbti.ans2b %></td>
+        <td><%= mbti.ans3a %></td>
+        <td><%= mbti.ans3b %></td>
+        <td><%= mbti.ans4a %></td>
+        <td><%= mbti.ans4b %></td>
+        <td><%= mbti.ans5a %></td>
+        <td><%= mbti.ans5b %></td>
+        <td><%= mbti.ans6a %></td>
+        <td><%= mbti.ans6b %></td>
+        <td><%= mbti.ans7a %></td>
+        <td><%= mbti.ans7b %></td>
+        <td><%= mbti.ans8a %></td>
+        <td><%= mbti.ans8b %></td>
+        <td><%= mbti.ans9a %></td>
+        <td><%= mbti.ans9b %></td>
+        <td><%= mbti.ans10a %></td>
+        <td><%= mbti.ans10b %></td>
+        <td><%= mbti.ans11a %></td>
+        <td><%= mbti.ans11b %></td>
+        <td><%= mbti.ans12a %></td>
+        <td><%= mbti.ans12b %></td>
+        <td><%= mbti.ans13a %></td>
+        <td><%= mbti.ans13b %></td>
+        <td><%= mbti.ans14a %></td>
+        <td><%= mbti.ans14b %></td>
+        <td><%= mbti.ans15a %></td>
+        <td><%= mbti.ans15b %></td>
+        <td><%= mbti.ans16a %></td>
+        <td><%= mbti.ans16b %></td>
+        <td><%= mbti.ans17a %></td>
+        <td><%= mbti.ans17b %></td>
+        <td><%= mbti.ans18a %></td>
+        <td><%= mbti.ans18b %></td>
+        <td><%= mbti.ans19a %></td>
+        <td><%= mbti.ans19b %></td>
+        <td><%= mbti.ans20a %></td>
+        <td><%= mbti.ans20b %></td>
+        <td><%= mbti.ans21a %></td>
+        <td><%= mbti.ans21b %></td>
+        <td><%= mbti.ans22a %></td>
+        <td><%= mbti.ans22b %></td>
+        <td><%= mbti.ans23a %></td>
+        <td><%= mbti.ans23b %></td>
+        <td><%= mbti.ans25a %></td>
+        <td><%= mbti.ans24b %></td>
+        <td><%= mbti.ans25a %></td>
+        <td><%= mbti.ans25b %></td>
+        <td><%= mbti.ans26a %></td>
+        <td><%= mbti.ans26b %></td>
+        <td><%= mbti.ans27a %></td>
+        <td><%= mbti.ans27b %></td>
+        <td><%= mbti.ans28a %></td>
+        <td><%= mbti.ans28b %></td>
+        <td><%= mbti.ans29a %></td>
+        <td><%= mbti.ans29b %></td>
+        <td><%= mbti.ans30a %></td>
+        <td><%= mbti.ans30b %></td>
+        <td><%= mbti.ans31a %></td>
+        <td><%= mbti.ans31b %></td>
+        <td><%= mbti.ans32a %></td>
+        <td><%= mbti.ans32b %></td>
+        <td><%= link_to 'Show', mbti %></td>
+        <td><%= link_to 'Edit', edit_mbti_path(mbti) %></td>
+        <td><%= link_to 'Destroy', mbti, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mbti', new_mbti_path %>

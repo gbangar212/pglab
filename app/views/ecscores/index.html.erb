@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="container">
+  <h3>Your EC Score</h3>
+  <p>Comparison data <br>
+  	Mean score: 70 <br>
+	Top quartile: 86 or higher<br>
+	Third quartile: 71 – 85<br>
+	Second quartile: 55 – 70 <br>
+	Bottom quartile 54 or lower <br>
+  </p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Emotional Awareness</th>
+        <th>Emotional Control (Balance)</th>
+        <th>Emotional Diagnosis(Empathy)</th>
+        <th>Emotional Response</th>
+        <th>Total</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+    <% @ecscores.each do |ecscore| %>
+      <tr>        
+        <td><%= ecscore.awareness %></td>
+        <td><%= ecscore.control %></td>
+        <td><%= ecscore.diagnosis %></td>
+        <td><%= ecscore.response %></td>
+        <td><%= ecscore.total %></td>
+        
+      </tr>
+      
+      <% end %>
+    </tbody>
+  </table>
+  
+    
+</div>

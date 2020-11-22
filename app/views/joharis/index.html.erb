@@ -1,0 +1,107 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Joharis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Ans1a</th>
+      <th>Ans1b</th>
+      <th>Ans2a</th>
+      <th>Ans2b</th>
+      <th>Ans3a</th>
+      <th>Ans3b</th>
+      <th>Ans4a</th>
+      <th>Ans4b</th>
+      <th>Ans5a</th>
+      <th>Ans5b</th>
+      <th>Ans6a</th>
+      <th>Ans6b</th>
+      <th>Ans7a</th>
+      <th>Ans7b</th>
+      <th>Ans8a</th>
+      <th>Ans8b</th>
+      <th>Ans9a</th>
+      <th>Ans9b</th>
+      <th>Ans10a</th>
+      <th>Ans10b</th>
+      <th>Ans11a</th>
+      <th>Ans11b</th>
+      <th>Ans12a</th>
+      <th>Ans12b</th>
+      <th>Ans13a</th>
+      <th>Ans13b</th>
+      <th>Ans14a</th>
+      <th>Ans14b</th>
+      <th>Ans15a</th>
+      <th>Ans15b</th>
+      <th>Ans16a</th>
+      <th>Ans16b</th>
+      <th>Ans17a</th>
+      <th>Ans17b</th>
+      <th>Ans18a</th>
+      <th>Ans18b</th>
+      <th>Ans19a</th>
+      <th>Ans19b</th>
+      <th>Ans20a</th>
+      <th>Ans20b</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @joharis.each do |johari| %>
+      <tr>
+        <td><%= johari.user_id %></td>
+        <td><%= johari.ans1a %></td>
+        <td><%= johari.ans1b %></td>
+        <td><%= johari.ans2a %></td>
+        <td><%= johari.ans2b %></td>
+        <td><%= johari.ans3a %></td>
+        <td><%= johari.ans3b %></td>
+        <td><%= johari.ans4a %></td>
+        <td><%= johari.ans4b %></td>
+        <td><%= johari.ans5a %></td>
+        <td><%= johari.ans5b %></td>
+        <td><%= johari.ans6a %></td>
+        <td><%= johari.ans6b %></td>
+        <td><%= johari.ans7a %></td>
+        <td><%= johari.ans7b %></td>
+        <td><%= johari.ans8a %></td>
+        <td><%= johari.ans8b %></td>
+        <td><%= johari.ans9a %></td>
+        <td><%= johari.ans9b %></td>
+        <td><%= johari.ans10a %></td>
+        <td><%= johari.ans10b %></td>
+        <td><%= johari.ans11a %></td>
+        <td><%= johari.ans11b %></td>
+        <td><%= johari.ans12a %></td>
+        <td><%= johari.ans12b %></td>
+        <td><%= johari.ans13a %></td>
+        <td><%= johari.ans13b %></td>
+        <td><%= johari.ans14a %></td>
+        <td><%= johari.ans14b %></td>
+        <td><%= johari.ans15a %></td>
+        <td><%= johari.ans15b %></td>
+        <td><%= johari.ans16a %></td>
+        <td><%= johari.ans16b %></td>
+        <td><%= johari.ans17a %></td>
+        <td><%= johari.ans17b %></td>
+        <td><%= johari.ans18a %></td>
+        <td><%= johari.ans18b %></td>
+        <td><%= johari.ans19a %></td>
+        <td><%= johari.ans19b %></td>
+        <td><%= johari.ans20a %></td>
+        <td><%= johari.ans20b %></td>
+        <td><%= link_to 'Show', johari %></td>
+        <td><%= link_to 'Edit', edit_johari_path(johari) %></td>
+        <td><%= link_to 'Destroy', johari, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Johari', new_johari_path %>

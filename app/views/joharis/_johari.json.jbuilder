@@ -1,0 +1,2 @@
+json.extract! johari, :id, :user_id, :ans1a, :ans1b, :ans2a, :ans2b, :ans3a, :ans3b, :ans4a, :ans4b, :ans5a, :ans5b, :ans6a, :ans6b, :ans7a, :ans7b, :ans8a, :ans8b, :ans9a, :ans9b, :ans10a, :ans10b, :ans11a, :ans11b, :ans12a, :ans12b, :ans13a, :ans13b, :ans14a, :ans14b, :ans15a, :ans15b, :ans16a, :ans16b, :ans17a, :ans17b, :ans18a, :ans18b, :ans19a, :ans19b, :ans20a, :ans20b, :created_at, :updated_at
+json.url johari_url(johari, format: :json)

@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  ans1: 1
+  ans2: 1
+  ans3: 1
+  ans4: 1
+  ans5: 1
+  ans6: 1
+  ans7: 1
+  ans8: 1
+  ans9: 1
+  ans10: 1
+  ans11: 1
+  ans12: 1
+
+two:
+  user: two
+  ans1: 1
+  ans2: 1
+  ans3: 1
+  ans4: 1
+  ans5: 1
+  ans6: 1
+  ans7: 1
+  ans8: 1
+  ans9: 1
+  ans10: 1
+  ans11: 1
+  ans12: 1

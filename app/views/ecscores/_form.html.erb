@@ -1,0 +1,47 @@
+<%= form_with(model: ecscore, local: true) do |form| %>
+  <% if ecscore.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ecscore.errors.count, "error") %> prohibited this ecscore from being saved:</h2>
+
+      <ul>
+        <% ecscore.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :awareness %>
+    <%= form.number_field :awareness %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control %>
+    <%= form.number_field :control %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diagnosis %>
+    <%= form.number_field :diagnosis %>
+  </div>
+
+  <div class="field">
+    <%= form.label :response %>
+    <%= form.number_field :response %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.number_field :total %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

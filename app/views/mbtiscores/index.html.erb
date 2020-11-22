@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mbtiscores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Ie</th>
+      <th>Ns</th>
+      <th>Tf</th>
+      <th>Pj</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mbtiscores.each do |mbtiscore| %>
+      <tr>
+        <td><%= mbtiscore.user_id %></td>
+        <td><%= mbtiscore.ie %></td>
+        <td><%= mbtiscore.ns %></td>
+        <td><%= mbtiscore.tf %></td>
+        <td><%= mbtiscore.pj %></td>
+        <td><%= link_to 'Show', mbtiscore %></td>
+        <td><%= link_to 'Edit', edit_mbtiscore_path(mbtiscore) %></td>
+        <td><%= link_to 'Destroy', mbtiscore, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mbtiscore', new_mbtiscore_path %>

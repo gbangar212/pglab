@@ -1,0 +1,2 @@
+module FirosHelper
+end

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  awareness: 1
+  control: 1
+  diagnosis: 1
+  response: 1
+  total: 1
+
+two:
+  user: two
+  awareness: 1
+  control: 1
+  diagnosis: 1
+  response: 1
+  total: 1

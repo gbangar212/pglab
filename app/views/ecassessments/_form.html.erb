@@ -1,0 +1,114 @@
+<%= form_with(model: ecassessment, local: true) do |form| %>
+  <% if ecassessment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ecassessment.errors.count, "error") %> prohibited this ecassessment from being saved:</h2>
+
+      <ul>
+        <% ecassessment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  
+  <br> <div class="field">
+   Please reply to each item below by selecting the one alternative that is most likely to be your response. <br>
+   Think about the way you would usually respond to the kind of situations below, not the way you would like to respond or the way you think you should respond. 
+   <br>No correct answers exist for any of the items
+  and your scores will be useful to you if you provide an accurate assessment of your typical behaviour. </div>	<br>
+
+  <div class="field">
+    <%= form.label :user_id, style: 'display:none' %>
+    <%= form.text_field :user_id , style: 'display:none'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans1, "1." %>  When I get really upset, I ... <br>
+    <%= form.radio_button :ans1, 1  %> Analyze why I am so disturbed <br>
+    <%= form.radio_button :ans1, 2  %> Blow up and let off steam <br>
+    <%= form.radio_button :ans1, 3  %> Hide it and remain calm <br>
+    
+  </div>
+
+  <div class="field">
+    <%= form.label :ans2, "2." %>  In a situation in which a colleague takes credit in public for my work and my ideas, I would probably ... <br>
+     <%= form.radio_button :ans2, 1  %> Let it slide and do nothing in order to avoid a confrontation <br>
+    <%= form.radio_button :ans2, 2  %> Later - in private - indicate that I would appreciate being given credit for my work and ideas <br>
+    <%= form.radio_button :ans2, 3  %> Thank the person in public for referencing my work and ideas and then explain my contribution <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans3, "3" %>  When I approach another person and try to strike up a conversation but the other person doesn't respond, I would probably... <br>
+     <%= form.radio_button :ans3, 1  %> Try to cheer up the person by sharing a funny story <br>
+    <%= form.radio_button :ans3, 2  %> Ask the other person if he or she wants to talk about what is on his or her mind <br>
+    <%= form.radio_button :ans3, 3  %> Leave the other person alone and find someone else to talk to <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans4, "4"%> When I enter a social group I usually ... <br>
+    <%= form.radio_button :ans4, 1  %> Remain quiet and wait for people to talk to me <br>
+    <%= form.radio_button :ans4, 2  %> Try to find something complimentary I can tell someone <br>
+    <%= form.radio_button :ans4, 3  %> Find ways to be the life of the party or the source of energy and fun. <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans5, "5"%>  On important issues I usually...<br>
+     <%= form.radio_button :ans5, 1  %> Make up my own mind and ignore other’s opinions. <br>
+    <%= form.radio_button :ans5, 2  %> Weigh both sides, and discuss it with others before making a decision. <br>
+    <%= form.radio_button :ans5, 3  %> Listen to my friends or colleagues and make the same decision they do. <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans6, "6"%>  When someone that I do not particularly like becomes romantically attracted to me, I usually… <br>
+    <%= form.radio_button :ans6, 1  %> Tell that person directly that I am not interested. <br>
+    <%= form.radio_button :ans6, 2  %> Respond by being friendly but cool or aloof. <br>
+    <%= form.radio_button :ans6, 3  %> Ignore the person and try to avoid him or her. <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans7, "7"%> When I am in the company of two people who have diametrically opposing points of view about an issue (for example, politics, abortion, war) and are arguing about it, I … <br>
+    <%= form.radio_button :ans7, 1  %> Find something upon which they can both agree and emphasize it.<br>
+    <%= form.radio_button :ans7, 2  %> Encourage the verbal battle. <br>
+    <%= form.radio_button :ans7, 3  %> Suggest that they stop arguing and calm down <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans8, "8"%> When I am playing a sport and the game comes to a point where everything depends on my last minute performance, … <br>
+    <%= form.radio_button :ans8, 1  %> Get very nervous and hope that I don’t fail <br>
+    <%= form.radio_button :ans8, 2  %> See this as an opportunity to shine <br>
+    <%= form.radio_button :ans8, 3  %> Stay focused and give it my best effort <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans9, "9"%> In a situation in which I have an important obligation and need to leave work early, but my colleagues ask me to stay to meet a deadline, I would probably …<br>
+    <%= form.radio_button :ans9, 1  %> Cancel my obligation and stay to complete the deadline. <br>
+    <%= form.radio_button :ans9, 2  %> Exaggerate a bit by telling my colleagues that I have an emergency that I can’t miss <br>
+    <%= form.radio_button :ans9, 3  %> Cancel my obligation but only if there is a strong enough reason for me to do so. <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans10, "10"%> In a situation in which another person becomes very angry and begins yelling at me, I … <br>
+     <%= form.radio_button :ans10, 1  %> Get angry in return. I don’t take that from anyone. <br>
+    <%= form.radio_button :ans10, 2  %> Walk away. It doesn’t do any good to argue. <br>
+    <%= form.radio_button :ans10, 3  %> Listen first, and then try to discuss the issue. <br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans11, "11"%> When I encounter someone who has just experienced a major loss or tragedy, I … <br>
+    <%= form.radio_button :ans11, 1  %> Really don’t know what to do or say. <br>
+    <%= form.radio_button :ans11, 2  %> Tell the person I feel very sorry and try to provide support. <br>
+    <%= form.radio_button :ans11, 3  %> Share a time when I experience a similar loss or tragedy.<br>
+  </div>
+
+  <div class="field">
+    <%= form.label :ans12, "12"%> When someone makes a racist joke or tells a crude story about a member of the opposite gender in mixed company, I usually … <br>
+   <%= form.radio_button :ans12, 1  %> Point out that this in inappropriate and not acceptable, and then change the subject. <br>
+    <%= form.radio_button :ans12, 2  %> Ignore it so I don’t cause a scene. <br>
+    <%= form.radio_button :ans12, 3  %> Get really upset and tell the person just what I think of what he or she said. <br>
+  </div> <br>
+	
+  <div class="actions">
+    <%= form.submit %>
+  </div> <br>
+<% end %>

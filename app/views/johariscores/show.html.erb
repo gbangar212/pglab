@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="container">
+  <h2>Johari Window scores</h2>
+  <p>Based on your responses, your Johari assessment score is below</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Ask Feedback</th>
+        <th>Give Feedback</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @johariscore.askfeedback %></td>
+        <td> <%= @johariscore.givefeedback %> </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

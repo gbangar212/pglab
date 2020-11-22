@@ -1,0 +1,28 @@
+<div class="jumbotron text-center">
+  <h1>Welcome to PG Lab <%= @name %></h1>
+  <p>Find your assessments below! Complete all the assessments that you have not completed yet. <br>
+   Once you complete an assessment, the links will take you to the scores of your assessment.</p> 
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3><%= link_to 'EC Assessment', new_ecassessment_path %></h3>
+      <p>This test will help in assessing different aspects of your emotional quotient!</p>
+    </div>
+    <div class="col-sm-4">
+      <h3><%= link_to 'FIRO B', new_firo_path %></h3>
+      <p>This test will help you understand your dynamics in your relationships and groups</p>
+    </div>
+    <div class="col-sm-4">
+      <h3><%= link_to 'Johari window', new_johari_path %></h3> 
+      <p>This assessment will help in improving self awareness and personal development while working in a group</p>
+    </div>
+    <div class="col-sm-4">
+      <h3><%= link_to 'MBTI', new_mbti_path %></h3> 
+      <p>This assessment will help you get an insight into your personality.</p>
+    </div>
+  </div>
+</div>
+
+

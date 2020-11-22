@@ -1,0 +1,131 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Firos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Ans1</th>
+      <th>Ans2</th>
+      <th>Ans3</th>
+      <th>Ans4</th>
+      <th>Ans5</th>
+      <th>Ans6</th>
+      <th>Ans7</th>
+      <th>Ans8</th>
+      <th>Ans9</th>
+      <th>Ans10</th>
+      <th>Ans11</th>
+      <th>Ans12</th>
+      <th>Ans13</th>
+      <th>Ans14</th>
+      <th>Ans15</th>
+      <th>Ans16</th>
+      <th>Ans17</th>
+      <th>Ans18</th>
+      <th>Ans19</th>
+      <th>Ans20</th>
+      <th>Ans21</th>
+      <th>Ans22</th>
+      <th>Ans23</th>
+      <th>Ans24</th>
+      <th>Ans25</th>
+      <th>Ans26</th>
+      <th>Ans27</th>
+      <th>Ans28</th>
+      <th>Ans29</th>
+      <th>Ans30</th>
+      <th>Ans31</th>
+      <th>Ans32</th>
+      <th>Ans33</th>
+      <th>Ans34</th>
+      <th>Ans35</th>
+      <th>Ans36</th>
+      <th>Ans37</th>
+      <th>Ans38</th>
+      <th>Ans39</th>
+      <th>Ans40</th>
+      <th>Ans41</th>
+      <th>Ans42</th>
+      <th>Ans43</th>
+      <th>Ans44</th>
+      <th>Ans45</th>
+      <th>Ans46</th>
+      <th>Ans47</th>
+      <th>Ans48</th>
+      <th>Ans49</th>
+      <th>Ans50</th>
+      <th>Ans51</th>
+      <th>Ans52</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @firos.each do |firo| %>
+      <tr>
+        <td><%= firo.user_id %></td>
+        <td><%= firo.ans1 %></td>
+        <td><%= firo.ans2 %></td>
+        <td><%= firo.ans3 %></td>
+        <td><%= firo.ans4 %></td>
+        <td><%= firo.ans5 %></td>
+        <td><%= firo.ans6 %></td>
+        <td><%= firo.ans7 %></td>
+        <td><%= firo.ans8 %></td>
+        <td><%= firo.ans9 %></td>
+        <td><%= firo.ans10 %></td>
+        <td><%= firo.ans11 %></td>
+        <td><%= firo.ans12 %></td>
+        <td><%= firo.ans13 %></td>
+        <td><%= firo.ans14 %></td>
+        <td><%= firo.ans15 %></td>
+        <td><%= firo.ans16 %></td>
+        <td><%= firo.ans17 %></td>
+        <td><%= firo.ans18 %></td>
+        <td><%= firo.ans19 %></td>
+        <td><%= firo.ans20 %></td>
+        <td><%= firo.ans21 %></td>
+        <td><%= firo.ans22 %></td>
+        <td><%= firo.ans23 %></td>
+        <td><%= firo.ans24 %></td>
+        <td><%= firo.ans25 %></td>
+        <td><%= firo.ans26 %></td>
+        <td><%= firo.ans27 %></td>
+        <td><%= firo.ans28 %></td>
+        <td><%= firo.ans29 %></td>
+        <td><%= firo.ans30 %></td>
+        <td><%= firo.ans31 %></td>
+        <td><%= firo.ans32 %></td>
+        <td><%= firo.ans33 %></td>
+        <td><%= firo.ans34 %></td>
+        <td><%= firo.ans35 %></td>
+        <td><%= firo.ans36 %></td>
+        <td><%= firo.ans37 %></td>
+        <td><%= firo.ans38 %></td>
+        <td><%= firo.ans39 %></td>
+        <td><%= firo.ans40 %></td>
+        <td><%= firo.ans41 %></td>
+        <td><%= firo.ans42 %></td>
+        <td><%= firo.ans43 %></td>
+        <td><%= firo.ans44 %></td>
+        <td><%= firo.ans45 %></td>
+        <td><%= firo.ans46 %></td>
+        <td><%= firo.ans47 %></td>
+        <td><%= firo.ans48 %></td>
+        <td><%= firo.ans49 %></td>
+        <td><%= firo.ans50 %></td>
+        <td><%= firo.ans51 %></td>
+        <td><%= firo.ans52 %></td>
+        <td><%= link_to 'Show', firo %></td>
+        <td><%= link_to 'Edit', edit_firo_path(firo) %></td>
+        <td><%= link_to 'Destroy', firo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Firo', new_firo_path %>

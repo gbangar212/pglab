@@ -1,0 +1,34 @@
+<h1>Result of your EC Assessment</h1>
+<p>Based on your responses, the score of your EC result has been calculated</p>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @current_user.id %>
+</p>
+
+<p>
+  <strong>Emotional Awareness:</strong>
+  <%= @awareness %>
+</p>
+
+<p>
+  <strong>Emotional Control:</strong>
+  <%= @control %>
+</p>
+
+<p>
+  <strong>Emotional Diagnosis:</strong>
+  <%= @diagnosis %>
+</p>
+
+<p>
+  <strong>Emotional Response:</strong>
+  <%= @response %>
+</p>
+
+<p>
+  <strong>Your total score:</strong>
+  <%= @total %>
+</p>

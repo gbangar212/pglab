@@ -1,0 +1,2 @@
+module MbtiscoresHelper
+end

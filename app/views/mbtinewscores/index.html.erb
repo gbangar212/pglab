@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Your Personal Style Inventory</h1>
+
+
+<br>
+
+<div class="container">
+  <h2>Results of your dimensions</h2>
+  <p>Use the score and the definitions to understand your results. </p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Dimension I</th>
+      <th>Dimension E</th>
+      <th> Dimension N</th>
+      <th>Dimension S</th>
+      <th>Dimension T</th>
+      <th> Dimension F</th>
+      <th>Dimension P</th>
+      <th>Dimension J</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @mbtinewscores.each do |mbtinewscore| %>
+      <tr>
+        <td><%= mbtinewscore.scorei %></td>
+        <td><%= mbtinewscore.scoree %></td>
+        <td><%= mbtinewscore.scoren %></td>
+        <td><%= mbtinewscore.scores %></td>
+        <td><%= mbtinewscore.scoret %></td>
+        <td><%= mbtinewscore.scoref %></td>
+        <td><%= mbtinewscore.scorep %></td>
+        <td><%= mbtinewscore.scorej %></td>
+      </tr>
+      
+       <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class ="container"> <p>
+DEFINITIONS - THE FOUR PAIRS OF PREFERENCES <br><br>
+E ( EXTRAVERSION) or I ( INTROVERSION):<br>
+Preference for how personal energy is replenished:<br>
+Strong "E" score - gets energized and replenished by interaction
+with lots of people<br>
+Strong "I" score - gets energized and replenished by doing things
+alone,or with chosen, trusted friend or intimate <br><br>
+S (SENSATION) or N (INTUITION)<br>
+Preference for how information is validated:<br>
+Strong "S" score - trusts information which comes from physical,
+sensory sources and own or other people's, experiences - the actual<br>
+Strong "N" score - trusts information which intuitively feels
+right; is more oriented to the "possible" than the "past"<br><br>
+T (THINKING) or F (FEELING)<br>
+Preference for how to base choices and decisions:<br>
+Strong "T" score - prefers to make decisions based on a logical
+thought process, established principles, objective external criteria<br>
+Strong "F" score - prefers to make decisions based on own or
+others' feelings or the potential impact of a decision on people<br><br>
+P (PERCEIVING) or J (JUDGING)<br>
+Preference for how long to keep options open or how quickly to "get to the bottom
+line":<br>
+Strong "P" score - prefers to weigh options and keep decisions open<br>
+Strong "J" score - prefers to get closure, make decision<br>
+
+</p>
+</div>
+

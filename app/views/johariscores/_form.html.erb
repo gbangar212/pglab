@@ -1,0 +1,32 @@
+<%= form_with(model: johariscore, local: true) do |form| %>
+  <% if johariscore.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(johariscore.errors.count, "error") %> prohibited this johariscore from being saved:</h2>
+
+      <ul>
+        <% johariscore.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :askfeedback %>
+    <%= form.number_field :askfeedback %>
+  </div>
+
+  <div class="field">
+    <%= form.label :givefeedback %>
+    <%= form.number_field :givefeedback %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

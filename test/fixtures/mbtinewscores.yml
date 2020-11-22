@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  scorei: 1
+  scoree: 1
+  scoren: 1
+  scores: 1
+  scoret: 1
+  scoref: 1
+  scorep: 1
+  scorej: 1
+
+two:
+  user: two
+  scorei: 1
+  scoree: 1
+  scoren: 1
+  scores: 1
+  scoret: 1
+  scoref: 1
+  scorep: 1
+  scorej: 1

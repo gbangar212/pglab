@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @ecscore.user_id %>
+</p>
+
+<p>
+  <strong>Awareness:</strong>
+  <%= @ecscore.awareness %>
+</p>
+
+<p>
+  <strong>Control:</strong>
+  <%= @ecscore.control %>
+</p>
+
+<p>
+  <strong>Diagnosis:</strong>
+  <%= @ecscore.diagnosis %>
+</p>
+
+<p>
+  <strong>Response:</strong>
+  <%= @ecscore.response %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @ecscore.total %>
+</p>
+
+<%= link_to 'Edit', edit_ecscore_path(@ecscore) %> |
+<%= link_to 'Back', ecscores_path %>
